@@ -85,7 +85,7 @@ if __name__ == "__main__":
 #     # Test 2: PlantError with DEFAULT message
 #     print("\nTesting PlantError with default message...")
 #     try:
-#         raise PlantError()  # No message provided!
+#         raise PlantError()
 #     except PlantError as e:
 #         print(f"Caught PlantError: {e}")
 
@@ -99,19 +99,19 @@ if __name__ == "__main__":
 #     # Test 4: WaterError with DEFAULT message
 #     print("\nTesting WaterError with default message...")
 #     try:
-#         raise WaterError()  # No message provided!
+#         raise WaterError()
 #     except WaterError as e:
 #         print(f"Caught WaterError: {e}")
 
 #     # Test 5: Catching all garden errors
 #     print("\nTesting catching all garden errors...")
 #     try:
-#         raise PlantError()  # Using default
+#         raise PlantError()
 #     except GardenError as e:
 #         print(f"Caught a garden error: {e}")
 
 #     try:
-#         raise WaterError("Tank is empty!")  # Using custom
+#         raise WaterError("Tank is empty!")
 #     except GardenError as e:
 #         print(f"Caught a garden error: {e}")
 
