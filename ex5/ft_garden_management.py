@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 
-# Step 1: Define custom exceptions
 class GardenError(Exception):
     """Base exception for garden problems."""
     pass
@@ -17,22 +16,18 @@ class WaterError(GardenError):
     pass
 
 
-# Step 2: Create GardenManager class
 class GardenManager:
     def __init__(self):
-        """Initialize the garden manager."""
         self.plants = []
 
-    def add_plant(self, plant_name):
-        """Add a plant to the garden."""
+    def add_plant(self, plant_name: str) -> None:
         if not plant_name:
             raise PlantError("Plant name cannot be empty!")
 
         self.plants.append(plant_name)
         print(f"Added {plant_name} successfully")
 
-    def water_plants(self):
-        """Water all plants with guaranteed cleanup."""
+    def water_plants(self) -> None:
         print("Opening watering system")
 
         try:
@@ -45,8 +40,8 @@ class GardenManager:
         finally:
             print("Closing watering system (cleanup)")
 
-    def check_plant_health(self, plant_name, water_level, sunlight_hours):
-        """Validate plant health parameters."""
+    def check_plant_health(self, plant_name: str,
+                           water_level: str, sunlight_hours: str) -> str:
         level = int(water_level)
         sunlight = int(sunlight_hours)
 
@@ -69,9 +64,7 @@ class GardenManager:
                 f"sun: {sunlight_hours})\n")
 
 
-# Step 3: Test everything
-def test_garden_management():
-    """Demonstrate the complete garden management system."""
+def test_garden_management() -> None:
     print("=== Garden Management System ===\n")
 
     garden = GardenManager()

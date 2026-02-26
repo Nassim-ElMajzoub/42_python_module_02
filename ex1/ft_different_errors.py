@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-def garden_operations():
+def garden_operations() -> None:
     print("=== Garden Error Types Demo ===\n")
     print("Testing ValueError...")
     try:
@@ -37,7 +37,7 @@ def garden_operations():
     print("\nAll error types tested successfully!")
 
 
-def test_error_types():
+def test_error_types() -> None:
     garden_operations()
 
 

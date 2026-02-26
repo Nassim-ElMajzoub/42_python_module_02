@@ -16,7 +16,7 @@ class WaterError(GardenError):
     pass
 
 
-def test_custom_errors():
+def test_custom_errors() -> None:
     print("=== Custom Garden Errors Demo ===\n")
 
     # Test 1: PlantError
@@ -72,7 +72,7 @@ if __name__ == "__main__":
 #         super().__init__(self.message)
 
 
-# def test_custom_errors():
+# def test_custom_errors() -> None:
 #     print("=== Custom Garden Errors Demo (Advanced) ===\n")
 
 #     # Test 1: PlantError with custom message
