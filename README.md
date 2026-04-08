@@ -39,20 +39,8 @@ pip3 install mypy --break-system-packages
 
 Each exercise can be run independently:
 ```bash
-# Exercise 0: Basic exception handling
+# Example exercise 0
 python3 ex0/ft_first_exception.py
-
-# Exercise 1: Agricultural data validation pipeline
-python3 ex1/ft_raise_exception.py
-
-# Exercise 2: Different types of problems
-python3 ex2/ft_different_errors.py
-
-# Exercise 3: Custom error types
-python3 ex3/ft_custom_errors.py
-
-# Exercise 4: Finally block - always clean up
-python3 ex4/ft_finally_block.py
 ```
 
 ### Code Validation
